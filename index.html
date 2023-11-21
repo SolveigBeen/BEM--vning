@@ -3,10 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>BEM övning</title>
+  <title>BEM övning</title>
   <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 </head>
 <body>
+
+  <!--Topbar-->
+  <div class="topbar">
+    <ul class="userlist-nav">
+      <li class="userlist-nav__item">PLANERING</li>
+      <li class="userlist-nav__item">DASHBOARD</li>
+      <li class="userlist-nav__item userlist-nav__item--active">KURSVY</li>
+      <li class="userlist-nav__item">BEDÖMNING</li>
+    </ul>
+  </div>
+
+    <!--Lesson Header-->
+  <div class="lesson-header">
+    <div class="lesson-header__item">
+      <h2 class="lesson-header__item--decoration">01</h2>
+      <h3>2 studiedagar</h3>
+    </div>
+    <div class="lesson-card">
+      <h2>Mål med modul</h2>
+      <ol class="lesson-card__item">
+        <li>Paradigm shift series A financing social media startup backing android.</li>
+        <li>Paradigm shift series A financing social media startup backing android.</li>
+      </ol>
+    </div>
+  </div>
+
+    <!--Self Assesment-->
+  <div class="activity-assessment">
+    <div class="activity-assessment__item activity-assessment__item--black">ej påbörjat</div>
+    <div class="activity-assessment__item">Förstår inte</div>
+    <div class="activity-assessment__item">förstår delvis</div>
+    <div class="activity-assessment__item">förstår helt</div>
+  </div>
+
+      <!--Video-->
+  <div class="video">
+    <img class="video__image"  src="images/videocam-outline.svg" >
+    <p>Super awesome video</p>
+  </div>
+
+<!--Kort- Awesome kurs-->
+  <div class="card">
+    <div class="card__image-placeholder"></div>
+    <div>
+    <h4 class="card__course-options--body">En awesome kurs i grejer</h4>
+    <p class="card__course-options--body">med Lärare Lärarsson</p>
+  </div>
+    <div class="card__course-options">
+      <div class="card__course-options--black">Planera</div>
+      <div class="card__course-options--light">Kursvy</div>
+      <div class="card__course-options--light">Översikt</div>
+      <div class="card__course-options--light">Bedömning</div>
+    </div>
+  </div>
+<!-- Toggle knapp-->
+  <div class="toggle-done">
+    <div class="toggle-done_switch toggle-done_switch--right">
+      <div class="switch-background ">
+        <div class="switch-white"></div>
+      </div>
+    </div> <p>Fäll ihop avklarade moduler</p>
+  </div>
+
+  <!-- Slider-Self assessment-->
+  <div class="Slider-container">
+    <h4> Lorem ipsum dolor sit amet, consectetu</h4>
+    <div class="slider">
+      <p>Förstår inte</p>
+        <div class="slider-box">
+          <div class="horizontal-line"></div> 
+          <div class="slider-circle"></div>
+          <div class="horizontal-line slider--right"></div>
+        </div>
+      <p>Förstår allt</p>
+    </div>
+  </div>
   
 </body>
 </html>

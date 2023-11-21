@@ -1,0 +1,255 @@
+body {
+  font-family: Cairo;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+h1{
+  font-size: 48px;
+
+}
+
+h2 { font-size: 30px;}
+
+h3 { font-size: 22px;}
+h4 { font-size: 18px;
+font-weight: 600;}
+
+/*User list topbar  */
+/* ------------------------------------- */
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f5f6ff;
+  box-shadow: 0px 6px 16px 0px hsla(0, 0%, 0%, 0.051);
+  padding: 8px;
+  border-radius: 6px;
+  width:801px;
+}
+
+.userlist-nav{
+display: flex;
+flex-direction: row;
+list-style-type: none;
+gap:10px;
+}
+
+.userlist-nav__item {
+  position: relative;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.6px;
+  letter-spacing: 7%;
+  color:#141619;
+}
+
+.userlist-nav__item--active {
+  font-weight: 800 ;
+}
+
+/*Divider     styling to use  to prevent the divider after the last item, :not(:last-child)*/
+.userlist-nav__item:not(:last-child):after { 
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #ccc; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0px -5px; /* Adjust the spacing between the items and the divider */
+}
+
+/* Lesson header  */
+/* ------------------------------------- */
+
+.lesson-header {
+  width:768px;
+  border-radius: 6px;
+  padding: 16px 16px 32px 16px;
+  background-color: #e6ebf3;
+  display: flex;
+
+}
+
+.lesson-header__item--decoration{
+  width:160px;
+ text-decoration: underline;
+ box-sizing: border-box;
+}
+
+
+.lesson-card__item{
+  padding-left: 10px;
+}
+
+/* Activity Self Assessment   */
+/* ------------------------------------- */
+
+.activity-assessment {
+  display:flex;
+  flex-direction: row;
+  width: 540px;
+  border-radius: 4px;
+  border:1px solid black;
+  border-radius: 4px;
+  
+}
+
+.activity-assessment__item {
+flex:1;
+border-left: 0.5px solid black;
+text-align: center;
+padding:0.5rem;
+
+}
+
+.activity-assessment__item--black {
+  background-color: black;
+  color:white
+}
+/*Video   */
+/* ------------------------------------- */
+.video {
+  width: 540px;
+  background-color: #14161908;
+  display: flex;
+  align-items:center;
+  gap:1rem;
+  padding:0 1rem;
+}
+.video__image {
+  height:2rem
+}
+
+/*Card   */
+/* ------------------------------------- */
+.card {
+  width: 15rem;
+  background-color: #f5f6ff;
+  border-radius:8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:1rem;
+}
+
+.card__image-placeholder {
+  height:12rem;
+  width:100%;
+  background-color: #666a73;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card__course-options {
+  display: flex;
+  flex-direction:column;
+  margin:1rem;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;  /* Ensure child elements don't exceed rounded corners */
+}
+
+.card__course-options--body {
+  margin:0;
+  padding:0 1rem;
+}
+
+.card__course-options--black {
+  background-color: black;
+  color: white;
+  }
+
+  .card__course-options--light {
+    background-color: #14161908;
+  }
+
+  
+/*Toggle-done  */
+/* ------------------------------------- */
+
+.toggle-done {
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+
+.switch-background {
+  width:3rem;
+  background-color: #141619;
+  height:1.5rem;
+  border-radius: 2rem;
+  border:1px solid black;
+  overflow:hidden;
+}
+
+.switch-white {
+  height:1.5rem;
+  width:1.5rem;
+  background-color: #f3f5f6;
+  border-radius: 2rem;
+}
+
+.toggle-done_switch--right {
+  display:flex;
+justify-content:flex-end;
+}
+
+.toggle-done_switch--left {     /*behöves eg ej, Default är vänster */
+  display:flex;
+justify-content:flex-start;
+}
+
+/*Slider-Self assessment */
+/* ------------------------------------- */
+.slider-container  {
+  width: 30rem;
+
+}
+.slider  {
+  width: 30rem;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+}
+
+.slider-box  {
+  width: 30rem;
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.horizontal-line {
+   width: 100%;
+  border-top: 1px solid #000; /* You can adjust the color and thickness of the line */
+  margin:  0; /* Adjust the margin as needed */
+  padding:0;
+}
+
+.slider--left{
+  width:20%;
+}
+.slider--right{
+  width:20%;
+}
+
+.slider-circle {
+  width:1.5rem;
+  height:1.5rem;
+  border-radius: 1rem;
+  background-color: #141619;
+  padding:0;
+  margin:0;
+  flex-shrink:0
+
+}
+
