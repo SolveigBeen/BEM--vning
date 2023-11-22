@@ -5,13 +5,21 @@ body {
   flex-direction: column;
   gap:2rem;
 }
+.h1-huge {
+  font-size: 62px;
+  font-weight: 600;
+margin:1rem 0;
+}
 
 h1{
-  font-size: 48px;
-
+  font-size: 42px;
+  font-weight: 600;
+margin:0;
 }
 
 h2 { font-size: 30px;
+  margin:0;
+  line-height:39px;
 }
 
 h3 { font-size: 22px;
@@ -39,7 +47,8 @@ p { font-size: 12px;
   box-shadow: 0px 6px 16px 0px hsla(0, 0%, 0%, 0.051);
   padding: 8px;
   border-radius: 6px;
-  width:801px;
+  min-width:100%;
+  margin-bottom:2rem;
 }
 
 .userlist-nav{
@@ -78,25 +87,80 @@ gap:10px;
 
 /* Lesson header  */
 /* ------------------------------------- */
+/*Lesson */
+/* ------------------------------------- */
 
-.lesson-header {
-  width:768px;
-  border-radius: 6px;
-  padding: 16px 16px 32px 16px;
-  background-color: #e6ebf3;
+.lesson-container {
   display: flex;
+  flex-direction: row;
+   max-width: 100%;
+  padding:1rem 1rem 1rem 0rem;
+  margin: 1rem;
 }
 
-.lesson-header__item--decoration{
-  width:160px;
- text-decoration: underline;
- box-sizing: border-box;
+.lesson-container--syren {
+  background-color: #e0d6ff;
+}
+
+.lesson-container--grey {
+  background-color: #e6ebf3;
+}
+
+.lesson-container--blue {
+  background-color: #b6dcff;
+}
+
+.lesson-container__left-module {
+  width:15rem;
+  padding-left:1rem;
+}
+
+.lesson-container__right-overview {
+ display: flex;
+flex-direction: column;
+width:75%;
 }
 
 
-.lesson-card__item{
+/*Lesson components */
+/*  ------------------------------------- */
+
+.number-module {
+  width:fit-content;
+  margin:0;
+  padding:0;
+  border-bottom:3px solid black;
+}
+
+.goal-list{
   padding-left: 10px;
 }
+
+
+.calender-box {
+  display:flex;
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.calender-image{
+  width:2rem;
+}
+
+.date-body {
+  font-size: 14px;
+  font-weight: 700;
+  padding:0;
+  margin:0;
+  line-height: 14px;
+}
+
+.date-body-small {
+  font-weight: 500;
+}
+
+
+
 
 /* Activity Self Assessment   */
 /* ------------------------------------- */
@@ -109,6 +173,7 @@ gap:10px;
   border-radius: 4px;
   flex-wrap: wrap;
   white-space: nowrap;
+  margin-top:1rem;
 }
 
 .activity-assessment__item {
@@ -123,8 +188,13 @@ padding:0.5rem;
   background-color: black;
   color:white
 }
-/*Video   */
+/*-links and file attachment   */
 /* ------------------------------------- */
+.link-container {
+  min-width:auto;
+  margin-top:1rem;
+}
+
 .file {
   max-width: 540px;
   background-color: #14161908;
@@ -146,7 +216,7 @@ padding:0.5rem;
   border-radius:8px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap:1rem;
 }
 
@@ -160,7 +230,10 @@ padding:0.5rem;
 .card__course-options {
   display: flex;
   flex-direction:column;
-  margin:1rem;
+ margin-top:auto;
+margin-bottom: 1rem;
+margin-right: 1rem;
+margin-left: 1rem;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;  /* Ensure child elements don't exceed rounded corners */
@@ -219,7 +292,8 @@ justify-content:flex-start;
 /*Slider-Self assessment */
 /* ------------------------------------- */
 .slider-container  {
-  width: 30rem;
+  width: 100%;
+  margin-top:1rem;
 
 }
 .slider  {
@@ -276,60 +350,8 @@ justify-content:flex-start;
   background-color: #ea4848;
   color:#f3f5f6;
   text-align: center;
+  margin-top:1rem;
 }
 
 
-/*Modul-mål */
-/* ------------------------------------- */
-.module-goal {
-  background-color: #14161908;
-  border-radius: 4px;
-  padding: 4px 8px;
-  width:fit-content;
-}
-
-/*Lesson */
-/* ------------------------------------- */
-
-.lesson-container {
-  background-color: #e0d6ff;
-  display: flex;
-  flex-direction: row;
-  gap:2rem;
-  min-width: 33rem;
-  padding:0 2rem 2rem 2rem;
-
-}
-
-.left-aside--text-decoration {
-  text-decoration: underline;
-}
-
-.calender-box {
-  display:flex;
-  gap:1rem;
-}
-
-.calender{
-  width:2rem;
-}
-
-.date-body {
-  font-size: 14px;
-  font-weight: 700;
-  padding:0;
-  margin:0;
-  line-height: 14px;
-}
-
-.date-body-small {
-  font-weight: 500;
-}
-
-.right-aside {
-display: flex;
-flex-direction: column;
-gap:2rem;
-width:75%;
-}
 
